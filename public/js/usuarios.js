@@ -81,7 +81,7 @@ const template = (item) => {
   <!-- lista de congregações -->
   <div style="overflow-x:auto">
     <table class="table" style="position: relative; min-width:800px;">
-      <caption>Lista de usuarios</caption>
+      <caption>Lista de usuários</caption>
       <thead>
         <tr>
           <th scope="col">#</th>
