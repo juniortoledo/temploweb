@@ -1,0 +1,4 @@
+vendor/
+app/Config/Conn.php
+app/config/global.php
+public/js/main.js

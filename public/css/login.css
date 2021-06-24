@@ -1,0 +1,52 @@
+.box {
+  width: 100vw;
+  height: 100vh;
+}
+
+.card {
+  width: 800px;
+  height: 380px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.col-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.thumb {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.logo {
+  position: relative;
+  width: 160px;
+}
+
+.form {
+  width: 300px;
+}
+
+@media(max-width:850px) {
+  .card {
+    width: 700px;
+  }
+}
+
+@media(max-width:700px) {
+  .card {
+    width: 90%;
+  }
+  .col-thumb {
+    display: none;
+  }
+  .form {
+    width: 100%;
+  }
+  .toast {
+    width: 95% !important;
+  }
+}

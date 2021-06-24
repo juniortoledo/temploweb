@@ -1,0 +1,23 @@
+{
+  "name": "erp/templo-web",
+  "authors": [
+    {
+      "name": "Deends Studios",
+      "email": "deendsstudios@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    },
+    "files": [
+      "app/Config/global.php"
+    ]
+  },
+  "require": {
+    "league/plates": "^3.4",
+    "coffeecode/router": "^1.0",
+    "opis/database": "^4.0",
+    "dompdf/dompdf": "^1.0"
+  }
+}

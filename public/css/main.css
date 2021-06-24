@@ -1,0 +1,37 @@
+body {
+  background-color: #d0d0ce;
+}
+
+.bg-templo {
+  background-color: #00695c;
+}
+
+.navbar {
+  z-index: 9990 !important;
+}
+
+.main {
+  margin-left: 280px;
+  margin-top: 80px;
+}
+
+.collapse a {
+  color: black !important;
+  text-decoration: none !important;
+}
+
+.collapse a:hover {
+  color: rgb(37, 37, 37) !important;
+}
+
+@media(max-width: 760px) {
+  .main {
+    margin-left: 0;
+  }
+}
+
+@media(max-width: 700px) {
+  .none {
+    display: none;
+  }
+}

@@ -1,0 +1,62 @@
+.sidenav {
+  position: fixed;
+  width: 260px;
+  height: 100%;
+  left: 0;
+  z-index: 9999;
+  background-color: #181818;
+  transition: .2s;
+  top: 60px;
+}
+
+.sidenav a, .sidenav .btn {
+  color: white;
+}
+
+.btn-menu {
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.open {
+  left: 0 !important;
+}
+
+.bg-sidenav {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .8);
+  z-index: 9998;
+  left: -100%;
+}
+
+.open-bg {
+  left: 0 !important;
+}
+
+.links-menu .btn, .links-menu .btn:hover {
+  background-color: none;
+  border: none;
+  color: white;
+}
+
+.drop-avatar {
+  height: 30px;
+  width: auto;
+  border-radius: 100%;
+}
+
+@media(max-width: 760px) {
+  .sidenav {
+    top: 0 !important;
+    left: -100%;
+  }
+  .btn-menu {
+    display: block;
+  }
+  .drop-nome {
+    display: none;
+  }
+}
