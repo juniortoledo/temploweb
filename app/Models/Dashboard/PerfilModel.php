@@ -69,6 +69,23 @@ class PerfilModel extends Conn
   }
 
   /**
+   * faz a edição do perfil
+   * $data rebe um array
+   * $id rece o id do usuário logado
+   */
+  public function editaUser(array $data)
+  {
+    $res = $this->db()->update('user')
+      ->where('id')->is($data['id'])
+      ->set(array(
+        'email' => $data['email'],
+        'nome' => $data['nome']
+      ));
+
+    return $res;
+  }
+
+  /**
    * faz a checagem se existe perfil da sede
    * $data rebe um id do usuário logado
    */

@@ -9,7 +9,7 @@ class Routing
   public $router;
   public function __construct()
   {
-    $this->router = new Router(URL);;
+    $this->router = new Router(URL);
     $this->router->namespace('App\Controllers');
 
     //auth
@@ -42,7 +42,10 @@ class Routing
     $this->router->get('/dashboard/sistema/usuarios', session('Dashboard\Usuarios:usuariosHome'));
     $this->router->get('/dashboard/sistema/usuarios/cadastrar', session('Dashboard\Usuarios:usuariosCadastrar'));
     $this->router->get('/dashboard/sistema/usuarios/listagem', session('Dashboard\Usuarios:listagem'));
+    $this->router->get('/dashboard/sistema/usuarios/editar/{id}', session('Dashboard\Usuarios:usuariosEditar'));
+    $this->router->get('/dashboard/sistema/usuarios/deletar/{id}', session('Dashboard\Usuarios:deletar'));
     $this->router->post('/dashboard/sistema/usuarios/cadastrar', session('Dashboard\Usuarios:cadastrar'));
+    $this->router->post('/dashboard/sistema/usuarios/editar', session('Dashboard\Usuarios:editar'));
 
     //perfil
     $this->router->get('/dashboard/perfil', session('Dashboard\Perfil:home'));

@@ -24,7 +24,7 @@ const getDados = async () => {
           item.email,
           item.data_cadastro,
           item.telefone,
-          item.id
+          item.id_user
         )).join(''))
       })
 
@@ -58,7 +58,7 @@ const search = () => {
         item.email,
         item.data_cadastro,
         item.telefone,
-        item.id
+        item.id_user
       )).join(''))
     })
 
@@ -70,7 +70,7 @@ const search = () => {
         item.email,
         item.data_cadastro,
         item.telefone,
-        item.id
+        item.id_user
       )).join(''))
     })
   }
@@ -102,7 +102,7 @@ const template = (item) => {
   return x
 }
 
-const itemTemplate = (id, nome, email, data_cadastro, telefone) => {
+const itemTemplate = (id, nome, email, data_cadastro, telefone, idUser) => {
   return `
   <tr>
     <th scope="row">${id}</th>
@@ -110,9 +110,9 @@ const itemTemplate = (id, nome, email, data_cadastro, telefone) => {
     <td>${email}</td>
     <td>${data_cadastro}</td>
     <td>${telefone}</td>
-    <td><a href="" class="btn btn-primary">
+    <td><a href="${url}dashboard/sistema/usuarios/editar/${idUser}" class="btn btn-primary">
         <i class="material-icons">edit</i></a>
-      <a href="" class="btn btn-danger">
+      <a href="${url}dashboard/sistema/usuarios/deletar/${idUser}" class="btn btn-danger">
         <i class="material-icons">delete</i></a>
     </td>
   </tr>
