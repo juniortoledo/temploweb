@@ -17,6 +17,9 @@ class Cadastro extends CadastroModel
   {
     $data = json_decode(file_get_contents('php://input'), true);
 
+    // modes ajustes
+    $ajustes = new AjustesModel();
+
     //verifica se email existe
     if ($this->buscaEmail($data)) {
       echo json_encode(['status' => 401]);

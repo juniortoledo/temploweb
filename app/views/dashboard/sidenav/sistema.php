@@ -7,6 +7,7 @@
   <div class="collapse" id="usuarios">
     <div class="card card-body">
       <a href="<?= URL ?>dashboard/sistema/usuarios" class="mb-2">Usuários</a>
+      <a href="<?= URL ?>dashboard/sistema/ajustes" class="mb-2">Ajustes do sistema</a>
     </div>
   </div>
 </div>

@@ -47,6 +47,12 @@ class Routing
     $this->router->post('/dashboard/sistema/usuarios/cadastrar', session('Dashboard\Usuarios:cadastrar'));
     $this->router->post('/dashboard/sistema/usuarios/editar', session('Dashboard\Usuarios:editar'));
 
+    //ajustes do sistema
+    $this->router->get('/dashboard/sistema/ajustes', session('Dashboard\Ajustes:home'));
+    $this->router->post('/dashboard/sistema/ajustes/patrimonio', session('Dashboard\Ajustes:patrimonio'));
+    $this->router->post('/dashboard/sistema/ajustes/data', session('Dashboard\Ajustes:data'));
+    $this->router->post('/dashboard/sistema/ajustes/moeda', session('Dashboard\Ajustes:moeda'));
+
     //perfil
     $this->router->get('/dashboard/perfil', session('Dashboard\Perfil:home'));
     $this->router->post('/dashboard/perfil', session('Dashboard\Perfil:editar'));
