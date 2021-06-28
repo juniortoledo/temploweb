@@ -15,7 +15,11 @@ class Ajustes extends View
    */
   public function home()
   {
-    echo $this->view->render('dashboard/sistema/ajustes_sistema/home');
+    // model Ajustes
+    $ajustes = new AjustesModel();
+    $data = $ajustes->busca($_SESSION['id']);
+
+    echo $this->view->render('dashboard/sistema/ajustes_sistema/home', ['ajustes' => $data]);
   }
 
   /**

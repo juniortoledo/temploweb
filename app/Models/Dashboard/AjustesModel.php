@@ -32,7 +32,7 @@ class AjustesModel extends Conn
    */
   public function editarPatrimonio(array $data, $id)
   {
-    $res = $this->db()->update('igrejas')
+    $res = $this->db()->update('ajustes_do_sistema')
     ->where('id_user')->is($id)
     ->set(array(
       'patrimonio_etiqueta' => $data['etiquetas'],
@@ -50,7 +50,7 @@ class AjustesModel extends Conn
    */
   public function editarData(array $data, $id)
   {
-    $res = $this->db()->update('igrejas')
+    $res = $this->db()->update('ajustes_do_sistema')
     ->where('id_user')->is($id)
     ->set(array(
       'data_formato' => $data['formato']
@@ -66,7 +66,7 @@ class AjustesModel extends Conn
    */
   public function editarMoeda(array $data, $id)
   {
-    $res = $this->db()->update('igrejas')
+    $res = $this->db()->update('ajustes_do_sistema')
     ->where('id_user')->is($id)
     ->set(array(
       'moeda_formato' => $data['moeda']
