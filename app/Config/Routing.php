@@ -57,6 +57,9 @@ class Routing
     $this->router->get('/dashboard/perfil', session('Dashboard\Perfil:home'));
     $this->router->post('/dashboard/perfil', session('Dashboard\Perfil:editar'));
 
+    //logs
+    $this->router->get('/dashboard/sistema/logs', session('Dashboard\Logs:home'));
+
     /**
      * Secretaria
      */
@@ -66,6 +69,13 @@ class Routing
     $this->router->get('/dashboard/secretaria/tipopessoas/editar/{id}', session('Dashboard\TipoPessoa:editar'));
     $this->router->post('/dashboard/secretaria/tipopessoas', session('Dashboard\TipoPessoa:adicionar'));
     $this->router->post('/dashboard/secretaria/tipopessoas/editar', session('Dashboard\TipoPessoa:update'));
+
+    //cargo eclesiástico
+    $this->router->get('/dashboard/secretaria/cargo', session('Dashboard\Cargo:home'));
+    $this->router->get('/dashboard/secretaria/cargo/editar/{id}', session('Dashboard\Cargo:editar'));
+    $this->router->post('/dashboard/secretaria/cargo/update', session('Dashboard\Cargo:update'));
+    $this->router->post('/dashboard/secretaria/cargo/add', session('Dashboard\Cargo:add'));
+    $this->router->get('/dashboard/secretaria/cargo/del/{id}', session('Dashboard\Cargo:del'));
 
     //erros
     $this->router->get('/erro', 'Auth\Web:erro');

@@ -20,7 +20,7 @@ class TipoPessoa extends View
     //listafem dos tipos
     $data = $tipo->listagem($_SESSION['id']);
 
-    echo $this->view->render('dashboard/secretaria/pessoas/tipo_pessoa/home', ['tipos' => $data]);
+    echo $this->view->render('dashboard/secretaria/tipo_pessoa/home', ['tipos' => $data]);
   }
 
   /**
@@ -33,7 +33,7 @@ class TipoPessoa extends View
     //listafem dos tipos
     $data = $tipo->listagemId($data['id']);
 
-    echo $this->view->render('dashboard/secretaria/pessoas/tipo_pessoa/editar', ['tipo' => $data]);
+    echo $this->view->render('dashboard/secretaria/tipo_pessoa/editar', ['tipo' => $data]);
   }
 
   /**
