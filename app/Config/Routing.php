@@ -84,6 +84,13 @@ class Routing
     $this->router->post('/dashboard/secretaria/funcao/add', session('Dashboard\Funcao:add'));
     $this->router->get('/dashboard/secretaria/funcao/del/{id}', session('Dashboard\Funcao:del'));
 
+    //Ocorrencias
+    $this->router->get('/dashboard/secretaria/ocorrencias', session('Dashboard\Ocorrencias:home'));
+    $this->router->get('/dashboard/secretaria/ocorrencias/editar/{id}', session('Dashboard\Ocorrencias:editar'));
+    $this->router->post('/dashboard/secretaria/ocorrencias/update', session('Dashboard\Ocorrencias:update'));
+    $this->router->post('/dashboard/secretaria/ocorrencias/add', session('Dashboard\Ocorrencias:add'));
+    $this->router->get('/dashboard/secretaria/ocorrencias/del/{id}', session('Dashboard\Ocorrencias:del'));
+
 
     //erros
     $this->router->get('/erro', 'Auth\Web:erro');

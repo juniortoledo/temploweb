@@ -15,6 +15,7 @@
           <a class="ms-2 mb-2" href="<?=URL?>dashboard/secretaria/tipopessoas">Tipo de pessoas</a>
           <a class="ms-2 mb-2" href="<?=URL?>dashboard/secretaria/cargo">Cargo eclesiástico</a>
           <a class="ms-2 mb-2" href="<?=URL?>dashboard/secretaria/funcao">Função</a>
+          <a class="ms-2 mb-2" href="<?=URL?>dashboard/secretaria/ocorrencias">Ocorrências</a>
         </div>
       </div>
 
