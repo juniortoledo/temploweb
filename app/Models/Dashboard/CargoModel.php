@@ -33,6 +33,7 @@ class CargoModel extends Conn
   {
     $res = $this->db()->from('cargos')
       ->where('id_user')->is($id)
+      ->orderBy('cargo')
       ->select()
       ->all();
 
