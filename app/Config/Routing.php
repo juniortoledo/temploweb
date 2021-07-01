@@ -77,6 +77,14 @@ class Routing
     $this->router->post('/dashboard/secretaria/cargo/add', session('Dashboard\Cargo:add'));
     $this->router->get('/dashboard/secretaria/cargo/del/{id}', session('Dashboard\Cargo:del'));
 
+    //função
+    $this->router->get('/dashboard/secretaria/funcao', session('Dashboard\Funcao:home'));
+    $this->router->get('/dashboard/secretaria/funcao/editar/{id}', session('Dashboard\Funcao:editar'));
+    $this->router->post('/dashboard/secretaria/funcao/update', session('Dashboard\Funcao:update'));
+    $this->router->post('/dashboard/secretaria/funcao/add', session('Dashboard\Funcao:add'));
+    $this->router->get('/dashboard/secretaria/funcao/del/{id}', session('Dashboard\Funcao:del'));
+
+
     //erros
     $this->router->get('/erro', 'Auth\Web:erro');
 
