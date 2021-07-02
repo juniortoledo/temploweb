@@ -9,6 +9,7 @@
       <?= $this->insert('dashboard/sidenav/igrejas') ?>
       <?= $this->insert('dashboard/sidenav/sistema') ?>
       <?= $this->insert('dashboard/sidenav/secretaria') ?>
+      <?= $this->insert('dashboard/sidenav/financeiro') ?>
 
     <?php endif; ?>
 

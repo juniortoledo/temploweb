@@ -19,6 +19,11 @@
         </div>
       </div>
 
+      <!-- cartão de membro -->
+      <a class="btn d-flex align-items-center" href="#">Cartão de membro</a>
+
     </div>
+    <!-- collapse -->
   </div>
+
 </div>

@@ -91,6 +91,15 @@ class Routing
     $this->router->post('/dashboard/secretaria/ocorrencias/add', session('Dashboard\Ocorrencias:add'));
     $this->router->get('/dashboard/secretaria/ocorrencias/del/{id}', session('Dashboard\Ocorrencias:del'));
 
+    /**
+     * Financeiro
+     */
+    //tipo documento
+    $this->router->get('/dashboard/financeiro/tipo-documento', session('Dashboard\TipoDocumento:home'));
+    $this->router->get('/dashboard/financeiro/tipo-documento/editar/{id}', session('Dashboard\TipoDocumento:editar'));
+    $this->router->post('/dashboard/financeiro/tipo-documento/update', session('Dashboard\TipoDocumento:update'));
+    $this->router->post('/dashboard/financeiro/tipo-documento/add', session('Dashboard\TipoDocumento:add'));
+    $this->router->get('/dashboard/financeiro/tipo-documento/del/{id}', session('Dashboard\TipoDocumento:del'));
 
     //erros
     $this->router->get('/erro', 'Auth\Web:erro');
